@@ -1,13 +1,15 @@
-describe("When given a sum function", () => {
+import { fizzbuzz } from "./fizzbuzz.js";
+
+describe("When given a fizbuzz function", () => {
   describe("When we give it 2 and 6 as parameters", () => {
-    test("We should receive 8", () => {
-      const value1 = 2;
-      const value2 = 6;
-      const expected = 8;
+    test("We should receive the array", () => {
+      const start = 2;
+      const end = 6;
+      const expected = [2, "Fizz", 4, "Buzz", "Fizz"];
 
-      const result = value1 + value2;
+      const result = fizzbuzz(start, end);
 
-      expect(result).toBe(expected);
+      expect(result).toEqual(expected);
     });
   });
 });

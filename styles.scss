@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-image: url(https://fondosmil.com/fondo/11771.jpg);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.information {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+  color: antiquewhite;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    display: flex;
+    width: 75%;
+  }
+}
+
+.input {
+  display: flex;
+  flex: 1;
+  margin-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+  color: antiquewhite;
+
+  .input_boxes {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+
+    label {
+      margin-top: 1rem;
+    }
+
+    .input_button {
+      width: 5rem;
+      height: 2rem;
+      margin-top: 1.5rem;
+    }
+  }
+
+  .input_result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
